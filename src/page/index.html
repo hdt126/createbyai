@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Web</title>
+  
+  <!-- Relative path linking to src/style/style.css -->
+  <link rel="stylesheet" href="../style/style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Web<span>Studio</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h1>Design & Build Faster with Modern Code</h1>
+      <p>Clean layout structured with your custom directory setup.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">Get Started</a>
+        <a href="#contact" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Features & Services</h2>
+        <p>Built for clean modular web development.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Optimized Speed</h3>
+          <p>Lightweight styles and semantic HTML for fast loading times.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Fully Responsive</h3>
+          <p>Works smoothly across mobile, tablet, and widescreen monitors.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📁</div>
+          <h3>Modular Structure</h3>
+          <p>Organized in separate `src/page` and `src/style` folders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2>Clean Project Architecture</h2>
+        <p>
+          Your project keeps stylesheets, pages, components, and assets separated into clean folders, making it easier to scale and maintain as the project grows.
+        </p>
+        <a href="#contact" class="btn btn-primary">Contact Team</a>
+      </div>
+      <div class="about-preview">
+        <span>src/component preview</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get in Touch</h2>
+        <p>Send a quick message</p>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 WebStudio. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
